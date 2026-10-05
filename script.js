@@ -1,7 +1,7 @@
 function getNextOct5(){
   const now = new Date();
   // Fecha y hora exactas del evento — cámbialas aquí si necesitas otra hora
-  return new Date(now.getFullYear(), 9, 5, 0, 0, 0);
+  return new Date(now.getFullYear(), 9, 5, 6, 0, 0);
 }
 
 const target = getNextOct5();
