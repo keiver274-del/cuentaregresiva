@@ -1,11 +1,7 @@
 function getNextOct5(){
   const now = new Date();
-  let year = now.getFullYear();
-  let target = new Date(year, 9, 5, 0, 0, 0); // mes 9 = octubre (0-indexed)
-  if (target.getTime() <= now.getTime()){
-    target = new Date(year + 1, 9, 5, 0, 0, 0);
-  }
-  return target;
+  // Fecha y hora exactas del evento — cámbialas aquí si necesitas otra hora
+  return new Date(now.getFullYear(), 9, 5, 0, 0, 0);
 }
 
 const target = getNextOct5();
